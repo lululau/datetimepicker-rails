@@ -1,12 +1,18 @@
-$('.datetimepicker').datetimepicker({
-   pickSeconds: false
+$(function() {
+    $('.datepicker').datetimepicker({
+        pickTime: false
+    });
 });
 
-$('.timepicker').datetimepicker({
-    pickDate: false,
-    pickSeconds: false
+$(function() {
+    $('.datetimepicker').datetimepicker({
+        pickSeconds: false
+    });
 });
 
-$('.datepicker').datetimepicker({
-    pickTime: false
+$(function() {
+    $('.timepicker').datetimepicker({
+        pickDate: false,
+        pickSeconds: false
+    });
 });
