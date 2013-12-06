@@ -1,10 +1,10 @@
-## SimpleForm & Bootstrap DateTimepicker for Rails
+## SimpleForm & Bootstrap v3 DateTimepicker for Rails
 
 This gem packages the bootstrap-datetimepicker for Rails asset pipeline, and creates the Simple Form custom fields for your project.
 
-The project home page: https://github.com/zpaulovics/datetimepicker-rails.git
+The project home page: https://github.com/lululau/datetimepicker-rails.git
 
-The project is based on: https://github.com/tarruda/bootstrap-datetimepicker.git project as a git submodule
+The project is based on: https://github.com/zpaulovics/datetimepicker-rails.git project as a fork
 
 
 ### Features
@@ -27,7 +27,7 @@ Add this line to your application's Gemfile:
 
 So install it from the git by:
 
-    gem 'datetimepicker-rails', :require => 'datetimepicker-rails', :git => 'git://github.com/zpaulovics/datetimepicker-rails.git'
+    gem 'datetimepicker-rails', :require => 'datetimepicker-rails', :git => 'git://github.com/lululau/datetimepicker-rails.git'
 
 And then execute:
 
@@ -87,7 +87,7 @@ Just call datetimepicker() with any selector.
 <input class="datetimepicker" type="text" >
 
 <script type="text/javascript">
-    $('.datetimepicker').datetimepicker({
+    $('.datetime-picker').datetimepicker({
         language: 'hu',
     });
 </script>
@@ -108,16 +108,16 @@ need different activation scripts, ignore the //= require bootstrap-datetimepick
 app/assets/javascripts/application.js.
 
 ```javascript
-    $('.datetimepicker').datetimepicker({
+    $('.datetime-picker').datetimepicker({
         pickSeconds: false
     });
 
-    $('.timepicker').datetimepicker({
+    $('.time-picker').datetimepicker({
         pickDate: false,
         pickSeconds: false
     });
 
-    $('.datepicker').datetimepicker({
+    $('.date-picker').datetimepicker({
         pickTime: false
     });
 ```
@@ -128,12 +128,12 @@ Specify your intended date and time formats in your config/locales/en.yml or rel
 
     en:
       datepicker:
-        dformat: '%d/%m/%Y'        # display format of the date (this is the default, can be ommited)
-        pformat: 'dd/MM/yyyy'      # picking format of the date (this is the default, can be ommited)
+        dformat: '%Y-%m-%d'        # display format of the date (this is the default, can be ommited)
+        pformat: 'YYYY-MM-，'      # picking format of the date (this is the default, can be ommited)
         weekstart: 0               # the week starts on Sunday (this is the default, can be ommited)
       timepicker:
         dformat: '%R'              # display format of the time (this is the default, can be ommited)
-        pformat: 'hh:mm'           # picking format of the time (this is the default, can be ommited)
+        pformat: 'HH:mm'           # picking format of the time (this is the default, can be ommited)
 
 
 ### For more details of usage
