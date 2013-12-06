@@ -13,8 +13,8 @@ class DatetimePickerInput < SimpleForm::Inputs::StringInput
     template.content_tag :div, class: 'input-group date datetime-picker' do
       input = super # leave StringInput do the real rendering
       input += template.content_tag :span, class: 'input-group-addon' do
-        template.content_tag :i, '', class: 'icon-calendar', data: { 'time-icon' => 'icon-time', 'date-icon' => 'icon-calendar' }
-      end
+        template.content_tag :span, '', :class => 'glyphicon glyphicon-calendar'      
+      end      
       input
     end
   end
