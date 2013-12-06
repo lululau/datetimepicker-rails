@@ -1,17 +1,17 @@
 $(function() {
-    $('.datepicker').datetimepicker({
+    $('.date-picker').datetimepicker({
         pickTime: false
     });
 });
 
 $(function() {
-    $('.datetimepicker').datetimepicker({
+    $('.datetime-picker').datetimepicker({
         pickSeconds: false
     });
 });
 
 $(function() {
-    $('.timepicker').datetimepicker({
+    $('.time-picker').datetimepicker({
         pickDate: false,
         pickSeconds: false
     });
