@@ -1,4 +1,4 @@
-$(document).on('page:change', function() {    
+$(document).on('ready page:change', function() {    
 
     $('.date-picker').datetimepicker({
         pickTime: false
